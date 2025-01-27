@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="UTF-8">
+    <title>Sushi Survey Form</title>
+     <link rel="stylesheet" href="styles.css" />
+     </head>
+  <body>
+    <h1 id="title">
+   Sushi Survey Form
+  </h1>
+  <p id="description">We want to know more about your favorite sushi.</p>
+  <form id="survey-form">
+   <label id="name-label">Name <input id="name" type="text" placeholder="Enter your name" required name="name"/></label>
+    <label id="email-label">Email <input id="email" type="email" placeholder="Enter your email" required/></label>
+    <label id="number-label">Age<input id="number" type="number" placeholder="Age" min="13" max="120" /></label>What sushi do you like?
+<select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Tuna Sushi</option>
+            <option value="2">Salmon Sushi</option>
+            <option value="3">Octopus Sushi</option>
+            <option value="4">Squid Sushi</option>
+            <option value="5">Egg Sushi</option>
+</select>
+<fieldset>
+        <legend>Would you recommend sushi to a friend? (required)</legend>
+        <label for="def"><input id="def" type="radio" name="in-type" value="def"  class="inline" checked /> Definitely</label>
+        <label for="maybe"><input id="maybe" type="radio" value="maybe" name="in-type" class="inline" /> Maybe</label>
+        <label for="not-sure"><input id="not-sure" type="radio" value="not-sure" name="in-type" class="inline" /> Not Sure</label>
+      </fieldset>
+       <fieldset>
+      <legend>What topping do you like on your sushi?</legend>
+  <input id="soy" type="checkbox" name="sauce" value="soy" checked> <label for="soy">Soy sauce</label>
+            <input id="wasabi" type="checkbox" name="sauce" value="wasabi"> <label for="wasabi">Wasabi</label>
+      <input id="ginger" type="checkbox" name="sauce" value="ginger"> <label for="ginger">Ginger</label>
+</fieldset>
+<fieldset>
+      <legend>Any comments or suggestions?</legend>
+<textarea></textarea>
+ </fieldset>
+<button id="submit" type="submit">Submit</button> 
+
+  </form>
+  </body>
+</html>
